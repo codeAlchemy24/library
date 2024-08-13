@@ -45,7 +45,7 @@
         background-color: rgb(48, 209, 88);
         color: rgb(28, 28, 30);
         margin: 0px;
-        border-radius: 0px 0px 10px 10px;
+        border-radius: 0px 0px 20px 20px;
         height: 30px;
         width: 100%;
         display: flex;
