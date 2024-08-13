@@ -23,15 +23,21 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
+        position: sticky;
+        top: 0px;
     }
     .search input {
         width: 50%;
         height: 30px;
-        border-radius: 10px;
+        border-radius: 20px;
+        padding: 5px;
+        border: 2px solid black;
     }
 </style>
 
 <div class = "search">
+    <h3>What would you like to learn today?</h3>
     <input bind:value={query} placeholder="Search for book & authors...">
 </div>
 

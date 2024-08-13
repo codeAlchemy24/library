@@ -58,8 +58,8 @@
 </style>
 
 {#if ready}
-    <div class = "card" transition:slide={{ delay: 100, duration: (position + 1) * 1000 }}>
-        <img src={bookData[2]} alt={bookData[0]}>
+    <div class = "card" transition:slide={{ delay: 100, duration: (position + 1) * 300 }}>
+        <center><img src={bookData[2]} alt={bookData[0]}></center>
         <p class = "name"><strong>{bookData[0]}</strong></p>
         <p class = "author"><i>{bookData[1]}</i></p>
         <a href="/"><p class = "link">Download</p></a>
