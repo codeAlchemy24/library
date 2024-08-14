@@ -13,12 +13,14 @@
         if(current > size) {
             current = 0;
         }
+        window.scrollTo(0, 0);
     }
     function prev() {
         current -= step;
         if(current < 0) {
             current = 0;
         }
+        window.scrollTo(0, 0);
     }
 </script>
 
