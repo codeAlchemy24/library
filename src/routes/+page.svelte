@@ -3,7 +3,7 @@
     import Database from "./database.json";
 
     let query = "";
-    let results = [];
+    let results = null;
 
     async function search(string) {
         string = string.toLowerCase();
@@ -22,13 +22,20 @@
     .search {
         display: flex;
         align-items: center;
-        justify-content: center;
-        flex-direction: column;
         position: sticky;
+        flex-direction: column;
+        background-color: #44475a;
+        margin: 0px auto;
+        padding-bottom: 20px;
         top: 0px;
+        width: 30%;
+        border-radius: 0px 0px 30px 30px;
+    }
+    .search h3 {
+        color: white;
     }
     .search input {
-        width: 50%;
+        width: 80%;
         height: 30px;
         border-radius: 20px;
         padding: 5px;

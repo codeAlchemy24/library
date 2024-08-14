@@ -1,5 +1,5 @@
 <script>
-    import { slide } from "svelte/transition";
+    import { blur } from "svelte/transition";
     import { onMount } from "svelte";
     export let bookData = [];
     export let position;
@@ -17,7 +17,10 @@
         background-color: rgb(28, 28, 30);
         display: inline-block;
         padding: 10px 0px 0px 0px;
-        box-shadow: 7px 7px 7px gray;
+        box-shadow: 7px 7px 7px black;
+    }
+    .card:hover {
+        box-shadow: 10px 10px 10px black;
     }
     img {
         border-radius: 20px;
@@ -58,7 +61,7 @@
 </style>
 
 {#if ready}
-    <div class = "card" transition:slide={{ delay: 100, duration: (position + 1) * 300 }}>
+    <div class = "card" transition:blur={{ delay: (position + 1) * 100, duration: 500 }}>
         <center><img src={bookData[2]} alt={bookData[0]}></center>
         <p class = "name"><strong>{bookData[0]}</strong></p>
         <p class = "author"><i>{bookData[1]}</i></p>
