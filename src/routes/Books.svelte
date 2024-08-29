@@ -37,8 +37,21 @@
         gap: 20px;
         padding: 20px;
     }
-    .buttons button {
-        color: red;
+    .left, .right {
+        height: 50px;
+        width: 75px;
+        background-color: var(--author);
+        color: white;
+        border: 2px solid var(--author);
+        font-size: 16px;
+        border: 3px solid var(--gold);
+    }
+    .left {
+        border-radius: 15px 0px 0px 15px;
+
+    }
+    .right {
+        border-radius: 0px 15px 15px 0px;
     }
 </style>
 
@@ -51,6 +64,6 @@
 <PageIndicator currentPage={(current / step) + 1} totalPages={(size / step) + 1} />
 
 <div class = "buttons">
-    <button on:click={prev}>Prev</button>
-    <button on:click={next}>Next</button>
+    <button class="left" on:click={prev}>Prev</button>
+    <button class="right" on:click={next}>Next</button>
 </div>

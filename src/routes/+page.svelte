@@ -1,4 +1,5 @@
 <script>
+    import Bar from "./Bar.svelte";
     import Books from "./Books.svelte";
     import Database from "./database.json";
 
@@ -19,12 +20,13 @@
 </script>
 
 <style>
+    @import "./theme.css";
     .search {
         display: flex;
         align-items: center;
         position: sticky;
         flex-direction: column;
-        background-color: #44475a;
+        background-color: var(--search);
         margin: 0px auto;
         padding-bottom: 20px;
         top: 0px;
@@ -39,13 +41,16 @@
         height: 30px;
         border-radius: 20px;
         padding: 5px;
-        border: 2px solid black;
     }
 </style>
 
+<Bar />
+
+<br />
+
 <div class = "search">
     <h3>What would you like to learn today?</h3>
-    <input bind:value={query} placeholder="Search for book & authors...">
+    <input bind:value={query} placeholder="Search for books & authors...">
 </div>
 
 {#if query == ""}

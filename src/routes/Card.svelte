@@ -12,19 +12,23 @@
 </script>
 
 <style>
+    @import "./theme.css";
     .card {
         border-radius: 20px;
-        background-color: rgb(28, 28, 30);
+        background-color: var(--card);
         display: inline-block;
         padding: 10px 0px 0px 0px;
         box-shadow: 7px 7px 7px black;
     }
     .card:hover {
         box-shadow: 10px 10px 10px black;
+        border: 2px solid var(--gold);
     }
     img {
         border-radius: 20px;
         margin: 10px 15px 10px 15px;
+        width: 350px;
+        height: 425px;
     }
     p {
         text-align: center;
@@ -35,17 +39,17 @@
         padding: 10px;
     }
     .name {
-        background-color: rgb(58, 58, 60);
+        background-color: var(--name);
     }
     .author {
-        background-color: rgb(142, 142, 147);
+        background-color: var(--author);
     }
     a {
         text-decoration: none;
     }
     .link {
         text-align: center;
-        background-color: rgb(48, 209, 88);
+        background-color: var(--button);
         color: rgb(28, 28, 30);
         margin: 0px;
         border-radius: 0px 0px 20px 20px;
