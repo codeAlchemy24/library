@@ -5,21 +5,17 @@
     export let Database;
 
     let current = 0;
-    let step = 16;
-    let size = Database.length;
+    const step = 16;
+    const size = Database.length;
 
     function next() {
         current += step;
-        if(current > size) {
-            current = 0;
-        }
+        if(current > size) current = 0;
         window.scrollTo(0, 0);
     }
     function prev() {
         current -= step;
-        if(current < 0) {
-            current = 0;
-        }
+        if(current < 0) current = 0;
         window.scrollTo(0, 0);
     }
 </script>
@@ -49,7 +45,7 @@
         color: white;
         border: 2px solid var(--author);
         font-size: 16px;
-        border: 3px solid var(--gold);
+        border: 3px solid var(--ring);
     }
     .left {
         border-radius: 15px 0px 0px 15px;

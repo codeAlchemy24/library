@@ -1,9 +1,18 @@
-:root {
+/*:root {
     --bg: red;
     --search: #523249;
     --card: #372248;
     --name: #414770;
     --author: #5B85AA;
     --button: #E79AFF;
-    --gold: #FDA703;
+    --ring: #FDA703;
+}*/
+
+:root {
+    --search: #392A65;
+    --card: #141020;
+    --name: #012E4A;
+    --author: #036280;
+    --button: #12C59A;
+    --ring: #392A65;
 }

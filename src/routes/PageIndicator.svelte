@@ -12,6 +12,8 @@
         flex-direction: column;
         align-items: center;
         color: white;
+        font-family: "Abel", sans-serif;
+        font-family: "Playwrite CU", sans-serif;
     }
 
     .title {
@@ -19,12 +21,12 @@
         margin: 10px;
     }
     .pages {
-        font-size: 30px;
+        font-size: 25px;
         margin: 0px;
     }
 </style>
 
 <div class = "block">
     <p class = "title">Page</p>
-    <p class = "pages">{currentPage} of {totalPages}</p>
+    <p class = "pages"><strong>{currentPage} of {totalPages}</strong></p>
 </div>

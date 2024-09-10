@@ -20,6 +20,10 @@
 </script>
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+
     @import "./theme.css";
     .search {
         display: flex;
@@ -33,20 +37,29 @@
         width: 30%;
         border-radius: 0px 0px 30px 30px;
     }
+    .search p {
+        color: white;
+        font-size: 25px;
+        font-family: "Playwrite CU", cursive;
+    }
     @media screen and (max-width: 640px) {
         .search {
             position: sticky;
             width: 100%;
         }
-    }
-    .search h3 {
-        color: white;
+        .search p {
+            font-size: 17px;
+        }
     }
     .search input {
         width: 80%;
         height: 30px;
         border-radius: 20px;
-        padding: 5px;
+        border: none;
+        padding: 10px;
+        font-size: 17px;
+        font-weight: bold;
+        font-family: "Abel", sans-serif;
     }
 </style>
 
@@ -54,7 +67,7 @@
 
 
 <div class = "search">
-    <h3>What would you like to learn today?</h3>
+    <p>What would you like to learn today?</p>
     <input bind:value={query} placeholder="Search for books & authors...">
 </div>
 

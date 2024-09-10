@@ -19,10 +19,11 @@
         display: inline-block;
         padding: 10px 0px 0px 0px;
         box-shadow: 7px 7px 7px black;
+        font-family: "Abel", sans-serif;
     }
     .card:hover {
         box-shadow: 10px 10px 10px black;
-        border: 2px solid var(--gold);
+        border: 2px solid var(--ring);
     }
     img {
         border-radius: 20px;
@@ -48,7 +49,7 @@
         background-color: var(--name);
     }
     .author {
-        color: black;
+        color: white;
         background-color: var(--author);
     }
     a {

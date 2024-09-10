@@ -21,12 +21,16 @@
     .bar p {
         margin: 0px;
     }
+    .name {
+        font-family: "Playwrite CU", cursive;
+    }
     .title {
         font-size: 40px;
+        font-family: "Abel", sans-serif;
     }
 </style>
 
 <div class = "bar">
-    <p>codeAlchemy's</p>
+    <p class = "name">codeAlchemy's</p>
     <p class = "title">e-Library</p>
 </div>
