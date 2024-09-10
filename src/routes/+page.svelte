@@ -4,7 +4,6 @@
     import Database from "$lib/database.json";
 
     let query = "";
-    let results = null;
 
     async function search(string) {
         string = string.toLowerCase();
@@ -14,9 +13,7 @@
         );
     }
 
-    $: if(query) {
-        results = search(query);
-    }
+    $: results = search(query);
 </script>
 
 <style>
