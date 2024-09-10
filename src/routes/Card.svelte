@@ -12,7 +12,7 @@
 </script>
 
 <style>
-    @import "./theme.css";
+    @import "$lib/theme.css";
     .card {
         border-radius: 20px;
         background-color: var(--card);

@@ -1,7 +1,7 @@
 <script>
     import Bar from "./Bar.svelte";
     import Books from "./Books.svelte";
-    import Database from "./database.json";
+    import Database from "$lib/database.json";
 
     let query = "";
     let results = null;
@@ -23,7 +23,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
 
-    @import "./theme.css";
+    @import "$lib/theme.css";
     .search {
         display: flex;
         align-items: center;
