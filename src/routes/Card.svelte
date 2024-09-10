@@ -30,6 +30,12 @@
         width: 350px;
         height: 425px;
     }
+    @media screen and (max-width: 640px) {
+        img {
+            width: 245px;
+            height: 300px;
+        }
+    }
     p {
         text-align: center;
         color: rgb(242, 242, 247);
@@ -42,6 +48,7 @@
         background-color: var(--name);
     }
     .author {
+        color: black;
         background-color: var(--author);
     }
     a {
@@ -69,6 +76,6 @@
         <center><img src={bookData[2]} alt={bookData[0]}></center>
         <p class = "name"><strong>{bookData[0]}</strong></p>
         <p class = "author"><i>{bookData[1]}</i></p>
-        <a href="/"><p class = "link">Download</p></a>
+        <a href="/"><p class = "link"><strong>Download</strong></p></a>
     </div>
 {/if}

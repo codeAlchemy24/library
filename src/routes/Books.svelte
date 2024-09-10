@@ -31,6 +31,11 @@
         gap: 20px;
         margin: 15px 15px;
     }
+    @media screen and (max-width: 640px) {
+        .grid {
+            grid-template-columns: auto;
+        }
+    }
     .buttons {
         display: flex;
         justify-content: center;

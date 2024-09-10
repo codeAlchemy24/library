@@ -33,6 +33,12 @@
         width: 30%;
         border-radius: 0px 0px 30px 30px;
     }
+    @media screen and (max-width: 640px) {
+        .search {
+            position: sticky;
+            width: 100%;
+        }
+    }
     .search h3 {
         color: white;
     }
@@ -46,7 +52,6 @@
 
 <Bar />
 
-<br />
 
 <div class = "search">
     <h3>What would you like to learn today?</h3>

@@ -11,6 +11,12 @@
         flex-direction: column;
         font-size: 20px;
         gap: 0px;
+        margin-bottom: 20px;
+    }
+    @media screen and (max-width: 640px) {
+        .bar {
+            margin-bottom: 0px;
+        }
     }
     .bar p {
         margin: 0px;
