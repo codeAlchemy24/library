@@ -5,13 +5,9 @@
     export let position;
     let ready = false;
 
-    let bookLink = `https://drive.google.com/file/d/${bookData[2]}/view`;
-    let imgSrc = `https://m.media-amazon.com/images/I/${bookData[3]}.jpg`;
-
     onMount(() => {
         ready = true;
     });
-
 </script>
 
 <style>
@@ -77,9 +73,9 @@
 
 {#if ready}
     <div class = "card" transition:blur={{ delay: (position + 1) * 100, duration: 500 }}>
-        <center><img src={imgSrc} alt={bookData[0]}></center>
+        <center><img src={`https://m.media-amazon.com/images/I/${bookData[3]}.jpg`} alt={bookData[0]}></center>
         <p class = "name"><strong>{bookData[0]}</strong></p>
         <p class = "author"><i>{bookData[1]}</i></p>
-        <a href={bookLink}><p class = "link"><strong>Download</strong></p></a>
+        <a href={`https://drive.google.com/file/d/${bookData[2]}/view`} target="_blank"><p class = "link"><strong>Download</strong></p></a>
     </div>
 {/if}
