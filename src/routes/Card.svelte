@@ -5,6 +5,8 @@
     export let position;
     let ready = false;
 
+    let bookLink = `https://drive.google.com/file/d/${bookData[2]}/view`;
+
     onMount(() => {
         ready = true;
     });
@@ -74,9 +76,9 @@
 
 {#if ready}
     <div class = "card" transition:blur={{ delay: (position + 1) * 100, duration: 500 }}>
-        <center><img src={bookData[2]} alt={bookData[0]}></center>
+        <center><img src={bookData[3]} alt={bookData[0]}></center>
         <p class = "name"><strong>{bookData[0]}</strong></p>
         <p class = "author"><i>{bookData[1]}</i></p>
-        <a href="/"><p class = "link"><strong>Download</strong></p></a>
+        <a href={bookLink}><p class = "link"><strong>Download</strong></p></a>
     </div>
 {/if}
