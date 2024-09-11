@@ -73,7 +73,9 @@
 
 {#if ready}
     <div class = "card" transition:blur={{ delay: (position + 1) * 100, duration: 500 }}>
-        <center><img src={`https://m.media-amazon.com/images/I/${bookData[3]}.jpg`} alt={bookData[0]}></center>
+        <center><img src={
+            bookData[3] !== undefined ? `https://m.media-amazon.com/images/I/${bookData[3]}.jpg` : "https://i.pinimg.com/736x/dd/64/da/dd64da585bc57cb05e5fd4d8ce873f57.jpg"
+        } alt={bookData[0]}></center>
         <p class = "name"><strong>{bookData[0]}</strong></p>
         <p class = "author"><i>{bookData[1]}</i></p>
         <a href={`https://drive.google.com/file/d/${bookData[2]}/view`} target="_blank"><p class = "link"><strong>Download</strong></p></a>
